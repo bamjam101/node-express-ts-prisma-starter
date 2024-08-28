@@ -1,29 +1,44 @@
 {
-  "name": "bartergram-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/server.js",
-  "scripts": {
-    "dev": "nodemon src/server.ts",
-    "start": "node dist/server.js",
-    "build": "tsc",
-    "prepare": "husky"
-  },
-  "keywords": [],
-  "author": "bartergram",
-  "license": "ISC",
-  "lint-staged": {
-    "*.ts": []
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.4.0",
-    "@commitlint/config-conventional": "^19.4.1",
-    "express": "^4.19.2",
-    "husky": "^9.1.5",
-    "lint-staged": "^15.2.9",
-    "node": "^22.7.0",
-    "nodemon": "^3.1.4",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
-  }
+	"name": "bartergram-backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/server.js",
+	"scripts": {
+		"dev": "nodemon src/server.ts",
+		"start": "node dist/server.js",
+		"build": "tsc",
+		"prepare": "husky",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"format:check": "prettier . --check",
+		"format:fix": "prettier . --write"
+	},
+	"keywords": [],
+	"author": "bartergram",
+	"license": "ISC",
+	"lint-staged": {
+		"*.{ts,js,css,md}": [
+			"pnpm lint:fix",
+			"pnpm format:fix"
+		]
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.4.0",
+		"@commitlint/config-conventional": "^19.4.1",
+		"@eslint/js": "^9.9.1",
+		"@trivago/prettier-plugin-sort-imports": "^4.3.0",
+		"@types/eslint-config-prettier": "^6.11.3",
+		"@types/eslint__js": "^8.42.3",
+		"eslint": "^9.9.1",
+		"eslint-config-prettier": "^9.1.0",
+		"express": "^4.19.2",
+		"husky": "^9.1.5",
+		"lint-staged": "^15.2.9",
+		"node": "^22.7.0",
+		"nodemon": "^3.1.4",
+		"prettier": "^3.3.3",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.5.4",
+		"typescript-eslint": "^8.3.0"
+	}
 }
