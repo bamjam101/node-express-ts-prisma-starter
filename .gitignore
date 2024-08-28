@@ -2,3 +2,5 @@ node_modules
 
 pnpm-*.yaml
 package-*.json
+
+dist
