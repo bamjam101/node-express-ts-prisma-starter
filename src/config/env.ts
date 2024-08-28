@@ -1,3 +1,4 @@
+import { ApplicationEnvironment } from '../util/constants/common'
 import dotenvFlow from 'dotenv-flow'
 
 dotenvFlow.config()
@@ -17,5 +18,5 @@ function parseEnv(key: keyof typeof process.env, defaultValue?: string) {
 
 export default {
 	PORT: parseEnv('PORT'),
-	NODE_ENV: parseEnv('NODE_ENV')
+	NODE_ENV: parseEnv('NODE_ENV') as ApplicationEnvironment
 }
