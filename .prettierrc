@@ -1,16 +1,17 @@
 {
 	"tabWidth": 2,
+	"trailingComma": "none",
 	"semi": false,
 	"useTabs": true,
-	"singleQuote": false,
+	"singleQuote": true,
 	"arrowParens": "always",
+	"bracketSameLine": true,
+	"printWidth": 150,
+	"endOfLine": "crlf",
+
 	"plugins": ["@trivago/prettier-plugin-sort-imports"],
-	"importOrder": [
-		"<THIRD_PARTY_MODULES>",
-		"^@/controllers/(.*)$",
-		"^@/routers/(.*)$",
-		"^@/util/(.*)$"
-	],
+	"importOrder": ["<THIRD_PARTY_MODULES>", "^@/controllers/(.*)$", "^@/routers/(.*)$", "^@/util/(.*)$"],
 	"importOrderSeparation": true,
 	"importOrderSortSpecifiers": true
 }
+
