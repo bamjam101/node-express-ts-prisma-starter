@@ -6,5 +6,6 @@ import { CorsOptions } from 'cors'
 export const CORS_CONFIG: CorsOptions = {
 	credentials: true,
 	methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
-	origin: env.NODE_ENV === ApplicationEnvironment.DEVELOPMENT ? ['*'] : ['https://bartergram.network']
+	// TODO: Change the origin to the actual domain
+	origin: env.NODE_ENV === ApplicationEnvironment.DEVELOPMENT ? ['*'] : ['*']
 }

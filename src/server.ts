@@ -1,4 +1,6 @@
+// No import eidts
 import app from './app'
+import './config/env'
 import env from './config/env'
 import logger from './util/logger'
 

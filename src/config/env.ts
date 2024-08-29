@@ -18,5 +18,6 @@ function parseEnv(key: keyof typeof process.env, defaultValue?: string) {
 
 export default {
 	PORT: parseEnv('PORT'),
-	NODE_ENV: parseEnv('NODE_ENV') as ApplicationEnvironment
+	NODE_ENV: parseEnv('NODE_ENV') as ApplicationEnvironment,
+	DATABASE_URL: parseEnv('DATABASE_URL')
 }

@@ -5,5 +5,8 @@ package-*.json
 
 dist
 
+.env
 .env.production
 .env.development
+
+scripts/temp.js
