@@ -1,4 +1,5 @@
 {
 	"ext": ".ts",
-	"ignore": ["dist", "node_modules"]
+	"ignore": ["dist", "node_modules"],
+	"watch": ["src"]
 }
